@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Thymeleaf Hello World Demo</title>
+    <link th:href = "@{/css/main.css}" rel="stylesheet">
+</head>
+<body>
+<h1 class="title">Welcome to ThymeLeaf Templates!</h1>
+
+<h4 class="greeting" th:text="'Welcome ' + ${name} + '!  I hope you enjoy the template'"></h4>
+
+<button type="button" th:onclick="demo()">Show Alert</button>
+<script type="text/javascript" th:src = "@{/js/main.js}"></script>
+</body>
+</html>
