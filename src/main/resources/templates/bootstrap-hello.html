@@ -20,20 +20,10 @@
         </tr>
         </thead>
         <tbody>
-        <tr>
-            <td>Elon</td>
-            <td>Musk</td>
-            <td>elon@example.com</td>
-        </tr>
-        <tr>
-            <td>Steve</td>
-            <td>Jobs</td>
-            <td>steve@example.com</td>
-        </tr>
-        <tr>
-            <td>Morgan</td>
-            <td>Freeman</td>
-            <td>morgan@example.com</td>
+        <tr th:each="person: ${people}">
+            <td th:text="${person.first}"></td>
+            <td th:text="${person.last}"></td>
+            <td th:text="${person.email}"></td>
         </tr>
         </tbody>
     </table>
